@@ -3,6 +3,9 @@ maven-scala-java
 
 playground Maven Scala/Java project
 
+The idea is to create a simple boilerplate project/template to simplify the creation of new project with cross-compilation of both Java and Scala code.
+
+NOTE: sbt already handle the cross-compilation by default, no matter if the maven conventions are used.
 
 ================
 
