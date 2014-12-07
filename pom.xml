@@ -8,6 +8,7 @@
 	<description>Playground project for Scala/Java development with maven</description>
 
 	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<scalaVersion>2.10.3</scalaVersion>
 	</properties>
 
