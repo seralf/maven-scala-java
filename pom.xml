@@ -1,15 +1,33 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>it.seralf</groupId>
 	<artifactId>maven-scala-java</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>maven-scala-java</name>
-	<description>Playground project for Scala/Java development with maven</description>
+	
+	<url>https://github.com/seralf/maven-scala-java</url>
+	<description>A playground project for Scala/Java development using maven</description>
+
+	<licenses>
+		<license>
+			<name>The Apache Software License, Version 2.0</name>
+			<url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+		</license>
+	</licenses>
+
+	<developers>
+		<developer>
+			<name>Alfredo Serafini</name>
+			<email>seralf@gmail.com</email>
+			<url>http://seralf.it/code</url>
+		</developer>
+	</developers>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<scalaVersion>2.10.3</scalaVersion>
+		<scalaVersion>2.11.4</scalaVersion>
 	</properties>
 
 	<dependencies>
@@ -19,19 +37,14 @@
 			<artifactId>scala-library</artifactId>
 			<version>${scalaVersion}</version>
 		</dependency>
-		<dependency>
-			<groupId>org.scala-tools</groupId>
-			<artifactId>maven-scala-plugin</artifactId>
-			<version>2.10.1</version>
-			<scope>compile</scope>
-		</dependency>
 
 		<dependency>
 			<groupId>org.scalatest</groupId>
-			<artifactId>scalatest_2.10</artifactId>
-			<version>2.0.RC1</version>
-			<scope>test</scope>
+			<artifactId>scalatest_2.11</artifactId>
+			<version>2.2.4</version>
 		</dependency>
+
+
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
