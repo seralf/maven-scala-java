@@ -1,29 +1,50 @@
+
 maven-scala-java
 ================
 
-playground Maven Scala/Java project
+A playground Maven Scala/Java project
 
 The idea is to create a simple boilerplate project/template to simplify the creation of new project with cross-compilation of both Java and Scala code.
 
-NOTE: sbt already handle the cross-compilation by default, no matter if the maven conventions are used.
-
-================
+**NOTE**: sbt already handle the cross-compilation by default, no matter if the maven conventions are used.
 
 
-TODO
+----
 
-1) refactorization
-2) add examples of test using JUnit and ScalaTest
-3) move archetype in a specific folder/project
+## local installation
+```bash
+$ mvn install
+```
 
 
-# maven archetype
+## TODO
 
-1. archetype creation:
+- [ ] refactorization
+- [ ] add examples of test using JUnit and ScalaTest
+- [ ] move the archetype creation idea in a specific folder / project module
+- [ ] think about publishing the artifact somewhere in order to use the option 
+`-DarchetypeRepository=http://host/maven/repository/`
 
->> mvn archetype:create-from-project
+## creating a maven archetype
 
-2. location of the archetype
+1. creating the archetype
+```bash
+$ mvn archetype:create-from-project
+```
+2. local publishing of the the archetype
+```bash
+$ cd target/generated-sources/archetype/
+$ mvn install
+```
+## example: creating a new project, based on the local archetype
+```bash
+mvn -B archetype:generate \
+ -DarchetypeGroupId=it.seralf.development \
+ -DarchetypeArtifactId=maven-scala-java-archetype \
+ -DarchetypeVersion=0.1 \
+ -DgroupId=it.seralf.examples \
+ -DartifactId=example-app \
+ -Dpackage=it.seralf.development.example
+```
 
-target/generated-sources/archetype/target/maven-scala-java-archetype-*.jar
 
