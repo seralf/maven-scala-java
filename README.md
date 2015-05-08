@@ -38,13 +38,15 @@ $ mvn install
 ```
 ## example: creating a new project, based on the local archetype
 ```bash
-mvn -B archetype:generate \
+$ mvn -B archetype:generate \
  -DarchetypeGroupId=it.seralf.development \
  -DarchetypeArtifactId=maven-scala-java-archetype \
- -DarchetypeVersion=0.1 \
+ -DarchetypeVersion=0.0.1-SNAPSHOT \
  -DgroupId=it.seralf.examples \
  -DartifactId=example-app \
  -Dpackage=it.seralf.development.example
+
+$ mvn -B archetype:generate -DarchetypeGroupId=it.seralf.development -DarchetypeArtifactId=maven-scala-java-archetype -DarchetypeVersion=0.0.1-SNAPSHOT -DgroupId=it.seralf.web -DartifactId=webask -Dpackage=it.seralf.webask
 ```
 
 
