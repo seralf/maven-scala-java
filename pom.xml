@@ -4,9 +4,9 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>it.seralf.development</groupId>
 	<artifactId>maven-scala-java</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.0.2</version>
 	<name>maven-scala-java</name>
-	
+
 	<url>https://github.com/seralf/maven-scala-java</url>
 	<description>A playground project for Scala/Java development using maven</description>
 
@@ -27,7 +27,7 @@
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<scalaVersion>2.11.4</scalaVersion>
+		<scalaVersion>2.12.0-M4</scalaVersion>
 	</properties>
 
 	<dependencies>
@@ -41,22 +41,21 @@
 		<dependency>
 			<groupId>org.scalatest</groupId>
 			<artifactId>scalatest_2.11</artifactId>
-			<version>2.2.4</version>
+			<version>3.0.0-M15</version>
 			<scope>test</scope>
 		</dependency>
-
 
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
-			<version>4.10</version>
+			<version>4.12</version>
 			<scope>test</scope>
 		</dependency>
 
 		<dependency>
 			<groupId>org.slf4j</groupId>
 			<artifactId>slf4j-log4j12</artifactId>
-			<version>1.7.12</version>
+			<version>1.7.21</version>
 		</dependency>
 
 	</dependencies>
@@ -69,8 +68,8 @@
 				<artifactId>maven-compiler-plugin</artifactId>
 				<version>3.1</version>
 				<configuration>
-					<source>1.7</source>
-					<target>1.7</target>
+					<source>1.8</source>
+					<target>1.8</target>
 				</configuration>
 			</plugin>
 			<plugin>
@@ -107,7 +106,7 @@
 				</executions>
 			</plugin>
 		</plugins>
-		
+
 	</build>
 
 	<repositories></repositories>
