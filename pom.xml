@@ -42,7 +42,7 @@
 		<dependency>
 			<groupId>org.scala-lang</groupId>
 			<artifactId>scala-reflect</artifactId>
-			<version>${scalaVersion}</version>
+			<version>${scala.version}</version>
 		</dependency>
 
 		<dependency>
